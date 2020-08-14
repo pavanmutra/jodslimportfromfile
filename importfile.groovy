@@ -1,6 +1,6 @@
 evaluate(new File("${WORKSPACE}/artifacts.groovy"))
 GroovyShell shell = new GroovyShell()
-def tools = shell.parse(new File('artifacts.groovy'))
+def tools = shell.parse(new File('${WORKSPACE}/artifacts.groovy'))
 artifacts = tools.artifacts()
 
 artifacts.each {
